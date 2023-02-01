@@ -10,8 +10,6 @@ int main(int argc, char** argv)
 
     cv::CommandLineParser parser(argc, argv, keys);
 
-//    std::string mym = "/home/mih/QtProjects/onx2trt/yolov8n-seg.engine";
-
     const std::string modeleFile = parser.get<String>("model");
 
     parser = CommandLineParser(argc, argv, keys);
