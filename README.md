@@ -8,3 +8,4 @@ cmake ..
 make  
 ./yolov8_infer_segment --model=/path/to/saved/model/yolov8n-seg.engine --input=/path/to/video  
 ./yolov8_infer_segment --model=/path/to/saved/model/yolov8n-seg.engine --device=0 (webcam)  
+![yolov8seg](https://user-images.githubusercontent.com/45326995/216149764-17ddf7e3-1f1e-48ee-aeb5-74ea5e31f2d4.gif)
