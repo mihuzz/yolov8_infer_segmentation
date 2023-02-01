@@ -72,8 +72,8 @@ int main(int argc, char** argv)
         return -1;
     }
 
-
-    cv::VideoWriter myvideofile("/home/mih/Видео/yolov8segment.avi", cv::VideoWriter::fourcc('I','4','2','0'), 29, cv::Size(cap.get(cv::CAP_PROP_FRAME_WIDTH), cap.get(cv::CAP_PROP_FRAME_HEIGHT)));
+    std::string outfile = "way/to/save.avi";
+    cv::VideoWriter myvideofile(outfile, cv::VideoWriter::fourcc('I','4','2','0'), 29, cv::Size(cap.get(cv::CAP_PROP_FRAME_WIDTH), cap.get(cv::CAP_PROP_FRAME_HEIGHT)));
 
     for(;;) {
 
