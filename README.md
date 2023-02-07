@@ -17,8 +17,7 @@ from onnx convert to trt:
 /usr/local/TensorRT-8.2.5.1/bin/trtexec --onnx=/way/to/your/yolov8n-seg.onnx --saveEngine=/path/to/save/yolov8n-seg.engine  
 ```
 mkdir build && cd build  
-cmake ..  
-make 
+cmake .. && make  
 ```
 ./yolov8_infer_segment --model=/path/to/saved/model/yolov8n-seg.engine --input=/path/to/video  
 ```
