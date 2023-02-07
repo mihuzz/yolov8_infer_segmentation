@@ -1,6 +1,7 @@
 # yolov8_infer_segmentation
 based on yolov8 https://github.com/ultralytics/ultralytics and https://github.com/fish-kong/Yolov8-instance-seg-tensorrt  
-convert yolov8n-seg.pt to onnx  
+convert yolov8n-seg.pt to onnx:  
+```python
 from ultralytics import YOLO
 
 # Load a model
