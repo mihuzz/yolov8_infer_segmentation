@@ -115,8 +115,8 @@ void doInference(IExecutionContext& context, float* input, float* output, float*
     CHECK(cudaMalloc(&buffers[inputIndex], batchSize * 3 * INPUT_H * INPUT_W * sizeof(float)));//
     CHECK(cudaMalloc(&buffers[outputIndex], batchSize * OUTPUT_SIZE * sizeof(float)));
     CHECK(cudaMalloc(&buffers[outputIndex1], batchSize * OUTPUT_SIZE1 * sizeof(float)));
-    // cudaMalloc分配内存 cudaFree释放内存 cudaMemcpy或 cudaMemcpyAsync 在主机和设备之间传输数据
-    // cudaMemcpy cudaMemcpyAsync 显式地阻塞传输 显式地非阻塞传输
+    // cudaMalloc cudaFree cudaMemcpy cudaMemcpyAsync 
+    // cudaMemcpy cudaMemcpyAsync 
     // Create stream
     cudaStream_t stream;
     CHECK(cudaStreamCreate(&stream));
