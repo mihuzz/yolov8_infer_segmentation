@@ -96,7 +96,7 @@ int main(int argc, char** argv)
         int i = 0;// [1,3,INPUT_H,INPUT_W]
         //std::cout << "pr_img.step" << pr_img.step << std::endl;
         for (int row = 0; row < INPUT_H; ++row) {
-            uchar* uc_pixel = pr_img.data + row * pr_img.step;//pr_img.step=widthx3 就是每一行有width个3通道的值
+            uchar* uc_pixel = pr_img.data + row * pr_img.step;//pr_img.step=widthx3 width
             for (int col = 0; col < INPUT_W; ++col)
             {
 
