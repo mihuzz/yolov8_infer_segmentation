@@ -116,7 +116,7 @@ int main(int argc, char** argv)
 
 
         std::vector<int> classIds;//id
-        std::vector<float> confidences;//prom of id
+        std::vector<float> confidences;//prob of id
         std::vector<cv::Rect> boxes;//box id
         std::vector<cv::Mat> picked_proposals;  //data mask
 
